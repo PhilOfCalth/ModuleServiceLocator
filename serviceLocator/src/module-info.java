@@ -1,5 +1,5 @@
-module service_locator{
-    requires service_provider;
+module serviceLocator{
+    requires serviceProviderInterface;
     uses thepackage.interfacepackage.ServiceProviderInterface;
     exports thepackage.locatorpackage;
 }
