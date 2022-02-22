@@ -1,4 +1,3 @@
 module consumer {
-    requires serviceLocator;
-    requires serviceProviderInterface;
+    requires service;
 }

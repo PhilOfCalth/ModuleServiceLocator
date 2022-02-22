@@ -1,4 +1,4 @@
 module serviceProvider{
-    requires serviceProviderInterface;
+    requires service;
     provides thepackage.interfacepackage.ServiceProviderInterface with thepackage.providerpackage.ServiceProvider;
 }
