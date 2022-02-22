@@ -11,12 +11,15 @@ function buildModule(){
   echo
 }
 
+
 echo "##### Building The Modules #####"
 echo
-buildModule 'serviceProviderInterface' 'thepackage/interfacepackage'
-buildModule 'serviceLocator' 'thepackage/locatorpackage'
-buildModule 'consumer' 'thepackage/consumerpackage'
-buildModule 'serviceProvider' 'thepackage/providerpackage'
+buildModule 'rebelHero' 'thepackage/heroInterfaces'
+buildModule 'rebelHeroLocator' 'thepackage/locatorpackage'
+buildModule 'rebelRecruiter' 'thepackage/recruiters'
+buildModule 'heroProvider' 'thepackage/heros'
 
 echo "##### Running the Consumer #####"
-java -p mods -m consumer/thepackage.consumerpackage.Consumer
+java -p mods -m rebelRecruiter/thepackage.recruiters.RebelRecruiter
+java -p mods -m rebelRecruiter/thepackage.recruiters.RebelRecruiter
+java -p mods -m rebelRecruiter/thepackage.recruiters.RebelRecruiter
